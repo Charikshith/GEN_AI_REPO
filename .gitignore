@@ -32,10 +32,10 @@ build/
 Agent/
 
 # But *don't* ignore the AI-Agent subdirectory
-!Agent/AI-Agent/
+!Agent/AI_Agent/
 
 # Crucially, also *don't* ignore files *within* AI-Agent
-!Agent/AI-Agent/**
+!Agent/AI_Agent/**
 
 # Ignore the entire Agent directory
 RAG_Techniques/
