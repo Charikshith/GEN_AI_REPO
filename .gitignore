@@ -28,20 +28,3 @@ venv/
 dist/
 build/
 
-# Ignore the entire Agent directory
-Agent/
-
-# But *don't* ignore the AI-Agent subdirectory
-!Agent/AI_Agent/
-
-# Crucially, also *don't* ignore files *within* AI-Agent
-!Agent/AI_Agent/**
-
-# Ignore the entire Agent directory
-RAG_Techniques/
-
-# But *don't* ignore the AI-Agent subdirectory
-!RAG_Techniques/RAG_techniques/
-
-# Crucially, also *don't* ignore files *within* AI-Agent
-!RAG_Techniques/RAG_techniques/**
