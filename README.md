@@ -283,11 +283,6 @@ Credit :- https://www.linkedin.com/in/kalyanksnlp/
 | LLM Reasoner          | Make any LLM think like OpenAI o1 and DeepSeek R1. | [Link](https://github.com/harishsg993010/LLM-Reasoner) |
 
 
-## ⭐️ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=KalyanKS-NLP/llm-engineer-toolkit&type=Date)](https://star-history.com/#)
-
-
 # AI Resource Hub
  Title | Topic | Link |
 | :---         |     :---:      |          ---: |
