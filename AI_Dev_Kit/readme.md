@@ -7,8 +7,8 @@ A curated collection of tools, libraries, and resources for building AI applicat
 
 ||||
 |---|---|---|
-| [🚀 Core AI Development](#1-core-ai-development) | [🤖 LLM-Specific Tools, Resources, and Techniques](#2-llm-specific-tools-resources-and-techniques) | [💾 Data Management and Processing](#data-management-and-processing) |
-| [☁️ Deployment and Infrastructure](#deployment-and-infrastructure)| [👁️‍🗨️ Monitoring, Evaluation, and Observability](#monitoring-evaluation-and-observability) |
+| [🚀 Core AI Development](#1-core-ai-development) | [🤖 LLM-Specific Tools, Resources, and Techniques](#2-llm-specific-tools-resources-and-techniques) | [💾 Data Management and Processing](#3-data-management-and-processing) |
+| [☁️ Deployment and Infrastructure](#4-deployment-and-infrastructure)| [👁️‍🗨️ Monitoring, Evaluation, and Observability](#5-monitoring-evaluation-and-observability) |
 
 
 ## 1. Core AI Development
