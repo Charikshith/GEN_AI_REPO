@@ -18,7 +18,7 @@
         - [2.2.6 Low Code](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#226-low-code)
         - [2.2.7 Cache](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#227-cache)
     - [2.3 LLM Retrieval Augmented Generation (RAG)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#23-llm-retrieval-augmented-generation-rag)
-    - [2.4 LLM Vector Databases]([https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#23-llm-retrieval-augmented-generation-rag](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#24-llm-vector-stores))
+    - [2.4 LLM Vector Databases](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#24-llm-vector-stores)
     - [2.5 LLM Inference](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#25-llm-inference)
     - [2.6 LLM Serving](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#26-llm-serving)
     - [2.7 LLM Data Handling (Extraction & Generation)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#27-llm-data-handling-extraction--generation)
