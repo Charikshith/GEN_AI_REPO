@@ -182,6 +182,7 @@ This section lists databases relevant to LLM applications, including specialized
 | [Promptwright](https://github.com/stacklok/promptwright) | Synthetic Dataset Generation Library.                                                               |
 | [EasyInstruct](https://github.com/zjunlp/EasyInstruct) | An Easy-to-use Instruction Processing Framework for Large Language Models.                          |
 | [Text Machina](https://github.com/Genaios/TextMachina) | A modular and extensible Python framework, designed to aid in the creation of high-quality, unbiased datasets to build robust models for MGT-related tasks such as detection, attribution, and boundary detection. |
+| [smol-docling](https://github.com/smol-rs/smol-docling) | A lightweight documentation generator for Rust and other languages. It's designed to be simple, fast, and customizable, inspired by `rustdoc` but more flexible and language-agnostic. It supports Markdown, code highlighting, and custom themes to create beautiful and easy-to-read documentation. |
 
 ### 2.8 LLM Agents
 
