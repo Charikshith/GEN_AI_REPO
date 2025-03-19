@@ -195,7 +195,21 @@ This section presents libraries focused on Retrieval Augmented Generation (RAG),
 | Rerankers     | A lightweight unified API for various reranking models.                                                        | [Link](https://github.com/AnswerDotAI/rerankers) |
 | Vectara       | Build Agentic RAG applications.                                                                                | [Link](https://vectara.github.io/py-vectara-agentic/latest/) |
 
-### 2.4 LLM Inference
+### 2.4 LLM Vector Databases
+
+This section lists specialized vector databases designed to efficiently store and retrieve vector embeddings, which are crucial for tasks like similarity search in LLM applications (e.g., RAG).
+
+| Library     | Description                                                                                                                                   | Link                                        |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| Pinecone      | A managed vector database optimized for similarity search, enabling efficient retrieval of data based on vector embeddings.                  | [Link](https://www.pinecone.io/)             |
+| Weaviate      | An open-source vector search engine that allows you to store and search data based on vector embeddings.                                       | [Link](https://weaviate.io/)                |
+| ChromaDB      | An open-source embedding database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs.                                                        | [Link](https://www.trychroma.com/)    |
+| Milvus         | Open-source vector database for embedding similarity search and AI applications.                                                                   | [Link](https://milvus.io/)    |
+| PostgreSQL    | A powerful, open-source relational database management system known for its reliability, feature richness, and extensibility.                 | [Link](https://www.postgresql.org/)         |
+| MySQL         | A popular open-source relational database management system, widely used for web applications and general-purpose data storage.             | [Link](https://www.mysql.com/)              |
+| MongoDB       | A NoSQL document database, providing flexibility and scalability for handling unstructured and semi-structured data.                         | [Link](https://www.mongodb.com/)             |
+
+### 2.5 LLM Inference
 
 This section presents libraries for optimizing the inference process of Large Language Models (LLMs), aiming for faster performance and efficient resource utilization.
 
@@ -208,7 +222,7 @@ This section presents libraries for optimizing the inference process of Large La
 | TensorRT-LLM  | TensorRT-LLM is a library for optimizing Large Language Model (LLM) inference.                        | [Link](https://github.com/NVIDIA/TensorRT-LLM) |
 | WebLLM        | High-performance In-browser LLM Inference Engine.                                                     | [Link](https://github.com/mlc-ai/web-llm) |
 
-### 2.5 LLM Serving
+### 2.6 LLM Serving
 
 This section highlights libraries for serving Large Language Models (LLMs) in a production environment, enabling you to deploy and manage LLMs for real-world applications.
 
@@ -217,11 +231,11 @@ This section highlights libraries for serving Large Language Models (LLMs) in a 
 | Langcorn  | Serving LangChain LLM apps and agents automagically with FastAPI.       | [Link](https://github.com/msoedov/langcorn) |
 | LitServe  | Lightning-fast serving engine for any AI model of any size. It augments FastAPI with features like batching, streaming, and GPU autoscaling.           | [Link](https://github.com/Lightning-AI/LitServe) |
 
-### 2.6 LLM Data Handling (Extraction & Generation)
+### 2.7 LLM Data Handling (Extraction & Generation)
 
 This section combines tools for both extracting data to feed into LLMs and generating new data using LLMs.
 
-#### 2.6.1 LLM Data Extraction
+#### 2.7.1 LLM Data Extraction
 
 This section provides libraries for extracting data from various sources (web pages, documents, etc.) to be used as input for Large Language Models (LLMs).
 
@@ -236,7 +250,7 @@ This section provides libraries for extracting data from various sources (web pa
 | MegaParse      | Parser for every type of document.                                                                                                    | [Link](https://github.com/quivrhq/megaparse) |
 | ExtractThinker | Document Intelligence library for LLMs.                                                                                               | [Link](https://github.com/enoch3712/ExtractThinker) |
 
-#### 2.6.2 LLM Data Generation
+#### 2.7.2 LLM Data Generation
 
 This section features libraries for generating synthetic data or augmenting existing datasets using Large Language Models (LLMs).
 
@@ -248,7 +262,7 @@ This section features libraries for generating synthetic data or augmenting exis
 | EasyInstruct | An Easy-to-use Instruction Processing Framework for Large Language Models.                          | [Link](https://github.com/zjunlp/EasyInstruct) |
 | Text Machina| A modular and extensible Python framework, designed to aid in the creation of high-quality, unbiased datasets to build robust models for MGT-related tasks such as detection, attribution, and boundary detection. | [Link](https://github.com/Genaios/TextMachina) |
 
-### 2.7 LLM Agents
+### 2.8 LLM Agents
 
 This section showcases libraries for building autonomous agents powered by Large Language Models (LLMs), enabling them to perform complex tasks and interact with their environment.
 
@@ -279,7 +293,7 @@ This section showcases libraries for building autonomous agents powered by Large
 | Agentarium    | Framework for creating and managing simulations populated with AI-powered agents.                        | [Link](https://github.com/Thytu/Agentarium) |
 | Upsonic       | Reliable AI agent framework that supports MCP.                                                          | [Link](https://github.com/upsonic/upsonic) |
 
-### 2.8 LLM Evaluation
+### 2.9 LLM Evaluation
 
 This section lists libraries and tools for evaluating the performance and quality of Large Language Models (LLMs).
 
@@ -301,7 +315,7 @@ This section lists libraries and tools for evaluating the performance and qualit
 | Opik       | An open-source end-to-end LLM Development Platform which also includes LLM evaluation.                           | [Link](https://github.com/comet-ml/opik) |
 | pandas-ai   | Chat with your database (SQL, CSV, pandas, polars, MongoDB, NoSQL, etc.). | [Link](https://github.com/Sinaptik-AI/pandas-ai) |
 
-### 2.9 LLM Monitoring
+### 2.10 LLM Monitoring
 
 This section presents libraries and platforms for monitoring the performance, health, and usage of Large Language Models (LLMs) in production.
 
@@ -315,7 +329,7 @@ This section presents libraries and platforms for monitoring the performance, he
 | Phoenix            | An open-source AI observability platform designed for experimentation, evaluation, and troubleshooting. | [Link](https://github.com/Arize-ai/phoenix) |
 | Observers          | A Lightweight Library for AI Observability.                                                       | [Link](https://github.com/cfahlgren1/observers) |
 
-### 2.10 LLM Prompt Engineering
+### 2.11 LLM Prompt Engineering
 
 This section highlights libraries and tools that assist in crafting effective prompts for Large Language Models (LLMs), optimizing the LLM's output.
 
@@ -331,7 +345,7 @@ This section highlights libraries and tools that assist in crafting effective pr
 | Py-priompt        | Prompt design library.                                                                                        | [Link](https://github.com/zenbase-ai/py-priompt) |
 | Promptimizer      | Prompt optimization library.                                                                                  | [Link](https://github.com/hinthornw/promptimizer) |
 
-### 2.11 LLM Structured Output Generation
+### 2.12 LLM Structured Output Generation
 
 This section features libraries for guiding Large Language Models (LLMs) to generate structured outputs, such as JSON or other specific formats.
 
@@ -344,7 +358,7 @@ This section features libraries for guiding Large Language Models (LLMs) to gene
 | LMQL      | A language for constraint-guided and efficient LLM programming. | [Link](https://github.com/eth-sri/lmql) |
 | Jsonformer | A Bulletproof Way to Generate Structured JSON from Language Models. | [Link](https://github.com/1rgs/jsonformer) |
 
-### 2.12 LLM Safety and Security
+### 2.13 LLM Safety and Security
 
 This section lists libraries for enhancing the safety and security of Large Language Models (LLMs), mitigating risks such as jailbreaking, prompt injection, and the generation of harmful content.
 
@@ -358,7 +372,7 @@ This section lists libraries for enhancing the safety and security of Large Lang
 | NeMo Guardrails | NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. | [Link](https://github.com/NVIDIA/NeMo-Guardrails) |
 | Garak        | LLM vulnerability scanner | [Link](https://github.com/NVIDIA/garak) |
 
-### 2.13 LLM Embedding Models
+### 2.14 LLM Embedding Models
 
 This section presents libraries for generating text embeddings, which are vector representations of text used to capture semantic meaning and facilitate various NLP tasks.
 
@@ -368,7 +382,7 @@ This section presents libraries for generating text embeddings, which are vector
 | Model2Vec                | Fast State-of-the-Art Static Embeddings             | [Link](https://github.com/MinishLab/model2vec) |
 | Text Embedding Inference | A blazing fast inference solution for text embeddings models. TEI enables high-performance extraction for the most popular models, including FlagEmbedding, Ember, GTE and E5. | [Link](https://github.com/huggingface/text-embeddings-inference) |
 
-### 2.14 LLM Learning Resources and Tutorials
+### 2.15 LLM Learning Resources and Tutorials
 
 Title | Topic | Link |
 | :---         |     :---:      |          ---: |
@@ -382,7 +396,7 @@ Title | Topic | Link |
 || vLLM | | [Link](https://github.com/vllm-project/vllm) |
 || Unsloth.ai | | [Link](https://www.unsloth.ai/introducing) |
 
-### 2.15  LLM-Specific Integrations
+### 2.16  LLM-Specific Integrations
 
 This section will list LLM related items that could not find a better location to fit into.
 
@@ -439,21 +453,8 @@ This section features tools for versioning data, enabling you to track changes t
 | Pachyderm     | A data lineage and data versioning platform for building reproducible machine learning pipelines.                                               | [Link](https://www.pachyderm.com/)           |
 | LakeFS        | An open-source data lake version control system that allows you to manage and version your data lake as if it were code.                       | [Link](https://lakefs.io/)                  |
 
-### 3.5 Databases
 
-This section lists databases commonly used in AI projects for storing and retrieving data, including both traditional relational databases and specialized vector databases for similarity search.
-
-| Library     | Description                                                                                                                                   | Link                                        |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| PostgreSQL    | A powerful, open-source relational database management system known for its reliability, feature richness, and extensibility.                 | [Link](https://www.postgresql.org/)         |
-| MySQL         | A popular open-source relational database management system, widely used for web applications and general-purpose data storage.             | [Link](https://www.mysql.com/)              |
-| MongoDB       | A NoSQL document database, providing flexibility and scalability for handling unstructured and semi-structured data.                         | [Link](https://www.mongodb.com/)             |
-| Pinecone      | A managed vector database optimized for similarity search, enabling efficient retrieval of data based on vector embeddings.                  | [Link](https://www.pinecone.io/)             |
-| Weaviate      | An open-source vector search engine that allows you to store and search data based on vector embeddings.                                       | [Link](https://weaviate.io/)                |
-| ChromaDB      | An open-source embedding database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs.                                                        | [Link](https://www.trychroma.com/)    |
-| Milvus         | Open-source vector database for embedding similarity search and AI applications.                                                                   | [Link](https://milvus.io/)    |
-
-### 3.6 Data Warehouses
+### 3.5 Data Warehouses
 
 This section features data warehouses, which are central repositories for storing and analyzing large volumes of structured and semi-structured data, enabling business intelligence and data-driven decision-making.
 
