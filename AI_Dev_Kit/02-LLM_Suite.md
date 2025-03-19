@@ -1,5 +1,15 @@
 ## 2. LLM-Suite
 
+| LLM             | Description                                                                                     |
+|---------------------|-------------------------------------------------------------------------------------------------|
+
+
+| SLM             | Description                                                                                     |
+|---------------------|-------------------------------------------------------------------------------------------------|
+| [gemma3](https://ai.google.dev/gemma) | Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind and Google. They are designed for best-in-class performance and responsibility, prioritizing rigorous testing and safety evaluations. Gemma models are available in two sizes: Gemma 2B and Gemma 7B, with both pretrained and instruction-tuned variants. They are based on the same research and technology used to create Gemini models. |
+| [mistralsmall3.1](https://mistral.ai/news/mistral-small-3-1) | Mistral Small is a performant language model for reasoning and specialized use-cases. Mistral Small is on par with Mixtral 8x7B and optimized for latency and cost. |
+
+
 This section focuses on libraries, tools, and techniques specifically designed for working with Large Language Models (LLMs). It covers aspects such as training, fine-tuning, application development, RAG, inference, deployment, security, and more.
 
 ### 2.1 LLM Training and Fine-Tuning
@@ -173,8 +183,7 @@ This section lists databases relevant to LLM applications, including specialized
 | [Crawlee](https://github.com/apify/crawlee-python)        | A web scraping and browser automation library.                                                                                         |
 | [MegaParse](https://github.com/quivrhq/megaparse)      | Parser for every type of document.                                                                                                    |
 | [ExtractThinker](https://github.com/enoch3712/ExtractThinker) | Document Intelligence library for LLMs.                                                                                               |
-| [gemma3](https://ai.google.dev/gemma) | Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind and Google. They are designed for best-in-class performance and responsibility, prioritizing rigorous testing and safety evaluations. Gemma models are available in two sizes: Gemma 2B and Gemma 7B, with both pretrained and instruction-tuned variants. They are based on the same research and technology used to create Gemini models. |
-| [mistralsmall3.1](https://mistral.ai/news/mistral-next-generation/) | Mistral Small is a performant language model for reasoning and specialized use-cases. Mistral Small is on par with Mixtral 8x7B and optimized for latency and cost. |
+
 
 #### 2.7.2 LLM Data Generation
 
