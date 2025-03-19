@@ -14,55 +14,55 @@
 
 ### [1.5 Natural Language Processing (General)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md#15-natural-language-processing-general)
 
-## 2. LLM-Specific Tools, Resources, and Techniques
+## [2. LLM Suite(Tools, Resources, and Techniques) ](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#2-llm-suite)
 
-### 2.1 LLM Training and Fine-Tuning
+### [2.1 LLM Training and Fine-Tuning](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#21-llm-training-and-fine-tuning)
 
-### 2.2 LLM Application Development
+### [2.2 LLM Application Development](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#22-llm-application-development)
 
-#### 2.2.1 Frameworks
+#### [2.2.1 Frameworks](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#221-frameworks)
 
-#### 2.2.2 Multi API Access
+#### [2.2.2 Multi API Access](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#222-multi-api-access)
 
-#### 2.2.3 Routers
+#### [2.2.3 Routers](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#223-routers)
 
-#### 2.2.4 Memory
+#### [2.2.4 Memory](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#224-memory)
 
-#### 2.2.5 Interface
+#### [2.2.5 Interface](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#225-interface)
 
-#### 2.2.6 Low Code
+#### [2.2.6 Low Code](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#226-low-code)
 
-#### 2.2.7 Cache
+#### [2.2.7 Cache](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#227-cache)
 
-### 2.3 LLM Retrieval Augmented Generation (RAG)
+### [2.3 LLM Retrieval Augmented Generation (RAG)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#23-llm-retrieval-augmented-generation-rag)
 
-### 2.4 LLM Vector Databases
+### [2.4 LLM Vector Databases](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#23-llm-retrieval-augmented-generation-rag)
 
-### 2.5 LLM Inference
+### [2.5 LLM Inference](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#25-llm-inference)
 
-### 2.6 LLM Serving
+### [2.6 LLM Serving](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#26-llm-serving)
 
-### 2.7 LLM Data Handling (Extraction & Generation)
+### [2.7 LLM Data Handling (Extraction & Generation)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#27-llm-data-handling-extraction--generation)
 
-#### 2.7.1 LLM Data Extraction
+#### [2.7.1 LLM Data Extraction](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#271-llm-data-extraction)
 
-#### 2.7.2 LLM Data Generation
+#### [2.7.2 LLM Data Generation](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#272-llm-data-generation)
 
-### 2.8 LLM Agents
+### [2.8 LLM Agents](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#28-llm-agents)
 
-### 2.9 LLM Evaluation
+### [2.9 LLM Evaluation](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#29-llm-evaluation)
 
-### 2.10 LLM Monitoring
+### [2.10 LLM Monitoring](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#210-llm-monitoring)
 
-### 2.11 LLM Prompt Engineering
+### [2.11 LLM Prompt Engineering](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#211-llm-prompt-engineering)
 
-### 2.12 LLM Structured Output Generation
+### [2.12 LLM Structured Output Generation](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#212-llm-structured-output-generation)
 
-### 2.13 LLM Safety and Security
+### [2.13 LLM Safety and Security](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#213-llm-safety-and-security)
 
-### 2.14 LLM Embedding Models
+### [2.14 LLM Embedding Models](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#214-llm-embedding-models)
 
-### 2.15 LLM Learning Resources and Tutorials
+### [2.15 LLM Learning Resources and Tutorials](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#215-llm-learning-resources-and-tutorials)
 
 ### 3. Data Management and Processing
 
