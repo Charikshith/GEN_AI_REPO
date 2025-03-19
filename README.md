@@ -1,4 +1,4 @@
-# 👨🏻‍💻 LLM Engineer Toolkit 
+# AI-Dev-Kit
 This repository contains a curated list of 120+ LLM libraries category wise.
 Credit :- https://www.linkedin.com/in/kalyanksnlp/
 
