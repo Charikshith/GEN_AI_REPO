@@ -198,20 +198,40 @@ This section presents libraries focused on Retrieval Augmented Generation (RAG),
 | Rerankers     | A lightweight unified API for various reranking models.                                                        | [Link](https://github.com/AnswerDotAI/rerankers) |
 | Vectara       | Build Agentic RAG applications.                                                                                | [Link](https://vectara.github.io/py-vectara-agentic/latest/) |
 
-### 2.4 LLM Vector Databases
+### 2.4 LLM Vector Stores
 
-This section lists specialized vector databases designed to efficiently store and retrieve vector embeddings, which are crucial for tasks like similarity search in LLM applications (e.g., RAG).
+This section lists databases relevant to LLM applications, including specialized vector stores for embedding similarity search and general-purpose databases that may be used for storing LLM-related data or metadata.
 
-| Library     | Description                                                                                                                                   | Link                                        |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| Pinecone      | A managed vector database optimized for similarity search, enabling efficient retrieval of data based on vector embeddings.                  | [Link](https://www.pinecone.io/)             |
-| Weaviate      | An open-source vector search engine that allows you to store and search data based on vector embeddings.                                       | [Link](https://weaviate.io/)                |
-| ChromaDB      | An open-source embedding database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs.                                                        | [Link](https://www.trychroma.com/)    |
-| Milvus         | Open-source vector database for embedding similarity search and AI applications.                                                                   | [Link](https://milvus.io/)    |
-| PostgreSQL    | A powerful, open-source relational database management system known for its reliability, feature richness, and extensibility.                 | [Link](https://www.postgresql.org/)         |
-| MySQL         | A popular open-source relational database management system, widely used for web applications and general-purpose data storage.             | [Link](https://www.mysql.com/)              |
-| MongoDB       | A NoSQL document database, providing flexibility and scalability for handling unstructured and semi-structured data.                         | [Link](https://www.mongodb.com/)             |
+| Library      | Description                                                                                                                                   | Deployment     |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| [Pinecone](https://www.pinecone.io/)      | A managed vector database optimized for similarity search, enabling efficient retrieval of data based on vector embeddings.                  | Cloud (Managed)   |
+| [Weaviate](https://weaviate.io/)      | An open-source vector search engine that allows you to store and search data based on vector embeddings.                                       | Self-Hosted/Cloud |
+| [ChromaDB](https://www.trychroma.com/)      | An open-source embedding database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs.                                                        | Self-Hosted        |
+| [Milvus](https://milvus.io/)         | Open-source vector database for embedding similarity search and AI applications.                                                                   | Self-Hosted/Cloud |
+| [Qdrant](https://qdrant.tech/)        | An open-source vector database and search engine designed for high-performance similarity search and neural network-based solutions.        | Self-Hosted/Cloud |
+| [FAISS](https://github.com/facebookresearch/faiss)         | A library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM.  | Library (Self-Implemented) |
+| [PostgreSQL](https://www.postgresql.org/)    | A powerful, open-source relational database management system.  Can be used to store LLM data or metadata, but not optimized for vector search without extensions. | Self-Hosted/Cloud |
+| [MySQL](https://www.mysql.com/)         | A popular open-source relational database management system. Can be used to store LLM data or metadata. | Self-Hosted/Cloud |
+| [MongoDB](https://www.mongodb.com/)       | A NoSQL document database, providing flexibility and scalability for handling unstructured and semi-structured data.                         | Self-Hosted/Cloud |
 
+**Comments:**
+
+*   **Pinecone:** Excellent for a managed solution, ease of use, and production-ready scalability. Use when you want to focus on building your application rather than managing infrastructure. Offers a proprietary API for vector similarity search.
+*   **Weaviate:** Good choice if you want an open-source solution with GraphQL and strong semantic search capabilities. Supports both GraphQL and vector similarity search for querying. Can be self-hosted or used with Weaviate Cloud Service (WCS).
+*   **ChromaDB:** Designed for simplicity and ease of use, great for local development and quick prototyping. Good Python integration. Offers a proprietary API for vector similarity search.
+*   **Milvus:** A powerful, scalable vector database designed for large-scale deployments. More complex to set up and manage but offers high performance. Can be self-hosted or used via Zilliz Cloud. Uses Vector Similarity Search as its query logic.
+*   **Qdrant:** Provides a good balance of performance, scalability, and ease of use. Offers a flexible deployment and rich feature set. Can be self-hosted or used with Qdrant Cloud. Uses Vector Similarity Search as its query logic.
+*   **FAISS:** Best suited when you need a library to build custom indexes and have more control over the implementation. Excellent if you are memory-constrained. Offers Vector Similarity Search (Library). Requires self-implementation for deployment.
+*   **PostgreSQL:** A robust and reliable relational database. Primarily uses SQL for querying. Consider for storing structured LLM data, but requires extensions (e.g., pgvector) for efficient vector similarity search. Available for self-hosting or on various cloud platforms.
+*   **MySQL:** A widely used relational database. Primarily uses SQL for querying. Consider for storing structured LLM data. Available for self-hosting or on various cloud platforms.
+*   **MongoDB:** A flexible NoSQL database. Uses MongoDB Query Language (MQL). Consider for storing unstructured or semi-structured LLM data and metadata. Available for self-hosting or through MongoDB Atlas on various cloud platforms.
+
+**Key for "Deployment" Column:**
+
+*   **Cloud (Managed):** Primarily offered as a managed service, where the provider handles infrastructure and maintenance.
+*   **Self-Hosted:** Designed to be deployed and managed on your own infrastructure.
+*   **Self-Hosted/Cloud:** Available for self-hosting but also offered as a managed service on a cloud platform.
+*   **Library (Self-Implemented):** Requires you to implement and deploy the solution yourself using the library.                                                              |                                                                       |                                                                                       |
 ### 2.5 LLM Inference
 
 This section presents libraries for optimizing the inference process of Large Language Models (LLMs), aiming for faster performance and efficient resource utilization.
