@@ -76,28 +76,28 @@
 
 ### [3.5 Data Warehouses](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#35-data-warehouses)
 
-## 4. Deployment and Infrastructure
+## [4. Deployment and Infrastructure](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#4-deployment-and-infrastructure)
 
-### 4.1 Model Serving Frameworks
+### [4.1 Model Serving Frameworks](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#41-model-serving-frameworks)
 
-### 4.2 Containerization
+### [4.2 Containerization](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#42-containerization)
 
-### 4.3 Cloud Platforms
+### [4.3 Cloud Platforms](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#43-cloud-platforms)
 
-### 4.4 Edge Deployment
+### [4.4 Edge Deployment](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#44-edge-deployment)
 
-### 4.5 MLOps Platforms
+### [4.5 MLOps Platforms](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#45-mlops-platforms)
 
-### 4.6 Serverless Computing
+### [4.6 Serverless Computing](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/04-Deployment_and_Inference.md#46-serverless-computing)
 
-## 5. Monitoring, Evaluation, and Observability
+## [5. Monitoring, Evaluation, and Observability](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/05-Monitoring_Evaluation_and_Observability.md#5-monitoring-evaluation-and-observability)
 
-### 5.1 Model Monitoring
+### [5.1 Model Monitoring](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/05-Monitoring_Evaluation_and_Observability.md#51-model-monitoring)
 
-### 5.2 Data Quality Monitoring
+### [5.2 Data Quality Monitoring](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/05-Monitoring_Evaluation_and_Observability.md#52-data-quality-monitoring)
 
-### 5.3 Explainable AI (XAI)
+### [5.3 Explainable AI (XAI)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/05-Monitoring_Evaluation_and_Observability.md#53-explainable-ai-xai)
 
-### 5.4 A/B Testing
+### [5.4 A/B Testing](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/05-Monitoring_Evaluation_and_Observability.md#54-ab-testing)
 
-### 5.5 Logging and Tracing
+### [5.5 Logging and Tracing](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/05-Monitoring_Evaluation_and_Observability.md#55-logging-and-tracing)
