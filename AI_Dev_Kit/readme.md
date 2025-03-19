@@ -2,7 +2,6 @@
 
 A curated collection of tools, libraries, and resources for building AI applications. This includes a focus on Large Language Models (LLMs) and related technologies.
 
-Credit: https://www.linkedin.com/in/kalyanksnlp/
 
 ||||
 |---|---|---|
