@@ -64,19 +64,17 @@
 
 ### [2.15 LLM Learning Resources and Tutorials](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/02-LLM_Suite.md#215-llm-learning-resources-and-tutorials)
 
-### 3. Data Management and Processing
+### [3. Data Management and Processing](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#3-data-management-and-processing)
 
-### 3.1 Data Ingestion
+### [3.1 Data Ingestion](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#31-data-ingestion)
 
-### 3.2 Data Cleaning/Transformation
+### [3.2 Data Cleaning/Transformation](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#32-data-cleaningtransformation)
 
-### 3.3 Feature Stores
+### [3.3 Feature Stores](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#33-feature-stores)
 
-### 3.4 Data Versioning
+### [3.4 Data Versioning](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#34-data-versioning)
 
-### 3.5 Databases
-
-### 3.6 Data Warehouses
+### [3.5 Data Warehouses](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/03-Data_Management.md#35-data-warehouses)
 
 ## 4. Deployment and Infrastructure
 
