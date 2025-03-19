@@ -167,11 +167,14 @@ This section lists databases relevant to LLM applications, including specialized
 | [Crawl4AI](https://github.com/unclecode/crawl4ai)       | Open-source LLM Friendly Web Crawler & Scraper.                                                                                      |
 | [ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai)  | A web scraping Python library that uses LLM and direct graph logic to create scraping pipelines for websites and local documents (XML, HTML, JSON, Markdown, etc.). |
 | [Docling](https://github.com/DS4SD/docling)        | Docling parses documents and exports them to the desired format with ease and speed.                                                  |
+| [smol-docling](https://github.com/smol-rs/smol-docling) | A lightweight documentation generator for Rust and other languages. It's designed to be simple, fast, and customizable, inspired by `rustdoc` but more flexible and language-agnostic. It supports Markdown, code highlighting, and custom themes to create beautiful and easy-to-read documentation. |
 | [Llama Parse](https://github.com/run-llama/llama_cloud_services)    | GenAI-native document parser that can parse complex document data for any downstream LLM use case (RAG, agents).                     |
 | [PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/)    | PyMuPDF4LLM library makes it easier to extract PDF content in the format you need for LLM & RAG environments.                        |
 | [Crawlee](https://github.com/apify/crawlee-python)        | A web scraping and browser automation library.                                                                                         |
 | [MegaParse](https://github.com/quivrhq/megaparse)      | Parser for every type of document.                                                                                                    |
 | [ExtractThinker](https://github.com/enoch3712/ExtractThinker) | Document Intelligence library for LLMs.                                                                                               |
+| [gemma3](https://ai.google.dev/gemma) | Gemma is a family of lightweight, state-of-the-art open models built by Google DeepMind and Google. They are designed for best-in-class performance and responsibility, prioritizing rigorous testing and safety evaluations. Gemma models are available in two sizes: Gemma 2B and Gemma 7B, with both pretrained and instruction-tuned variants. They are based on the same research and technology used to create Gemini models. |
+| [mistralsmall3.1](https://mistral.ai/news/mistral-next-generation/) | Mistral Small is a performant language model for reasoning and specialized use-cases. Mistral Small is on par with Mixtral 8x7B and optimized for latency and cost. |
 
 #### 2.7.2 LLM Data Generation
 
@@ -182,7 +185,7 @@ This section lists databases relevant to LLM applications, including specialized
 | [Promptwright](https://github.com/stacklok/promptwright) | Synthetic Dataset Generation Library.                                                               |
 | [EasyInstruct](https://github.com/zjunlp/EasyInstruct) | An Easy-to-use Instruction Processing Framework for Large Language Models.                          |
 | [Text Machina](https://github.com/Genaios/TextMachina) | A modular and extensible Python framework, designed to aid in the creation of high-quality, unbiased datasets to build robust models for MGT-related tasks such as detection, attribution, and boundary detection. |
-| [smol-docling](https://github.com/smol-rs/smol-docling) | A lightweight documentation generator for Rust and other languages. It's designed to be simple, fast, and customizable, inspired by `rustdoc` but more flexible and language-agnostic. It supports Markdown, code highlighting, and custom themes to create beautiful and easy-to-read documentation. |
+
 
 ### 2.8 LLM Agents
 
