@@ -2,29 +2,33 @@
 
 This section focuses on libraries, tools, and techniques specifically designed for working with Large Language Models (LLMs). It covers aspects such as training, fine-tuning, application development, RAG, inference, deployment, security, and more.
 
+## 2. LLM-Specific Tools, Resources, and Techniques
+
+This section focuses on libraries, tools, and techniques specifically designed for working with Large Language Models (LLMs). It covers aspects such as training, fine-tuning, application development, RAG, inference, deployment, security, and more.
+
 ### 2.1 LLM Training and Fine-Tuning
 
 This section lists libraries that facilitate the training and fine-tuning of Large Language Models (LLMs), allowing you to customize pre-trained models for specific tasks and datasets.
 
-| Library             | Description                                                                                     | Link |
-|---------------------|-------------------------------------------------------------------------------------------------|------|
-| unsloth            | Fine-tune LLMs faster with less memory.                                                          | [Link](https://github.com/unslothai/unsloth) |
-| PEFT                | State-of-the-art Parameter-Efficient Fine-Tuning library.                                       | [Link](https://github.com/huggingface/peft) |
-| TRL                 | Train transformer language models with reinforcement learning.                                  | [Link](https://github.com/huggingface/trl) |
-| Transformers       | Transformers provides thousands of pretrained models to perform tasks on different modalities such as text, vision, and audio. | [Link](https://github.com/huggingface/transformers) |
-| Axolotl           | Tool designed to streamline post-training for various AI models.                                 | [Link](https://github.com/axolotl-ai-cloud/axolotl/) |
-| LLMBox             | A comprehensive library for implementing LLMs, including a unified training pipeline and comprehensive model evaluation. | [Link](https://github.com/RUCAIBox/LLMBox) |
-| LitGPT             | Train and fine-tune LLM lightning fast.                                                          | [Link](https://github.com/Lightning-AI/litgpt) |
-| Mergoo            | A library for easily merging multiple LLM experts, and efficiently train the merged LLM.         | [Link](https://github.com/Leeroo-AI/mergoo) |
-| Llama-Factory      | Easy and efficient LLM fine-tuning.                                                              | [Link](https://github.com/hiyouga/LLaMA-Factory) |
-| Ludwig            | Low-code framework for building custom LLMs, neural networks, and other AI models.               | [Link](https://github.com/ludwig-ai/ludwig) |
-| Txtinstruct       | A framework for training instruction-tuned models.                                               | [Link](https://github.com/neuml/txtinstruct) |
-| Lamini            | An integrated LLM inference and tuning platform.                                                 | [Link](https://github.com/lamini-ai/lamini) |
-| XTuring           | xTuring provides fast, efficient and simple fine-tuning of open-source LLMs, such as Mistral, LLaMA, GPT-J, and more. | [Link](https://github.com/stochasticai/xTuring) |
-| RL4LMs            | A modular RL library to fine-tune language models to human preferences.                          | [Link](https://github.com/allenai/RL4LMs) |
-| DeepSpeed         | DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective. | [Link](https://github.com/deepspeedai/DeepSpeed) |
-| torchtune         | A PyTorch-native library specifically designed for fine-tuning LLMs.                             | [Link](https://github.com/pytorch/torchtune) |
-| PyTorch Lightning | A library that offers a high-level interface for pretraining and fine-tuning LLMs.               | [Link](https://github.com/Lightning-AI/pytorch-lightning) |
+| Library             | Description                                                                                     |
+|---------------------|-------------------------------------------------------------------------------------------------|
+| [unsloth](https://github.com/unslothai/unsloth)            | Fine-tune LLMs faster with less memory.                                                          |
+| [PEFT](https://github.com/huggingface/peft)                | State-of-the-art Parameter-Efficient Fine-Tuning library.                                       |
+| [TRL](https://github.com/huggingface/trl)                 | Train transformer language models with reinforcement learning.                                  |
+| [Transformers](https://github.com/huggingface/transformers)       | Transformers provides thousands of pretrained models to perform tasks on different modalities such as text, vision, and audio. |
+| [Axolotl](https://github.com/axolotl-ai-cloud/axolotl/)           | Tool designed to streamline post-training for various AI models.                                 |
+| [LLMBox](https://github.com/RUCAIBox/LLMBox)             | A comprehensive library for implementing LLMs, including a unified training pipeline and comprehensive model evaluation. |
+| [LitGPT](https://github.com/Lightning-AI/litgpt)             | Train and fine-tune LLM lightning fast.                                                          |
+| [Mergoo](https://github.com/Leeroo-AI/mergoo)            | A library for easily merging multiple LLM experts, and efficiently train the merged LLM.         |
+| [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory)      | Easy and efficient LLM fine-tuning.                                                              |
+| [Ludwig](https://github.com/ludwig-ai/ludwig)            | Low-code framework for building custom LLMs, neural networks, and other AI models.               |
+| [Txtinstruct](https://github.com/neuml/txtinstruct)       | A framework for training instruction-tuned models.                                               |
+| [Lamini](https://github.com/lamini-ai/lamini)            | An integrated LLM inference and tuning platform.                                                 |
+| [XTuring](https://github.com/stochasticai/xTuring)           | xTuring provides fast, efficient and simple fine-tuning of open-source LLMs, such as Mistral, LLaMA, GPT-J, and more. |
+| [RL4LMs](https://github.com/allenai/RL4LMs)            | A modular RL library to fine-tune language models to human preferences.                          |
+| [DeepSpeed](https://github.com/deepspeedai/DeepSpeed)         | DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective. |
+| [torchtune](https://github.com/pytorch/torchtune)         | A PyTorch-native library specifically designed for fine-tuning LLMs.                             |
+| [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning) | A library that offers a high-level interface for pretraining and fine-tuning LLMs.               |
 
 ### 2.2 LLM Application Development
 
@@ -32,79 +36,113 @@ This section features frameworks, libraries, and tools designed for building app
 
 #### 2.2.1 Frameworks
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| LangChain    | LangChain is a framework for developing applications powered by large language models (LLMs).          | [Link](https://github.com/langchain-ai/langchain) |
-| Llama Index  | LlamaIndex is a data framework for your LLM applications.                                              | [Link](https://github.com/run-llama/llama_index) |
-| HayStack     | Haystack is an end-to-end LLM framework that allows you to build applications powered by LLMs, Transformer models, vector search and more. | [Link](https://github.com/deepset-ai/haystack) |
-| Prompt flow  | A suite of development tools designed to streamline the end-to-end development cycle of LLM-based AI applications. | [Link](https://github.com/microsoft/promptflow) |
-| Griptape     | A modular Python framework for building AI-powered applications.                                        | [Link](https://github.com/griptape-ai/griptape) |
-| Weave        | Weave is a toolkit for developing Generative AI applications.                                          | [Link](https://github.com/wandb/weave) |
-| Llama Stack  | Build Llama Apps.                                                                                      | [Link](https://github.com/meta-llama/llama-stack) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [LangChain](https://github.com/langchain-ai/langchain)    | LangChain is a framework for developing applications powered by large language models (LLMs).          |
+| [Llama Index](https://github.com/run-llama/llama_index)  | LlamaIndex is a data framework for your LLM applications.                                              |
+| [HayStack](https://github.com/deepset-ai/haystack)     | Haystack is an end-to-end LLM framework that allows you to build applications powered by LLMs, Transformer models, vector search and more. |
+| [Prompt flow](https://github.com/microsoft/promptflow)  | A suite of development tools designed to streamline the end-to-end development cycle of LLM-based AI applications. |
+| [Griptape](https://github.com/griptape-ai/griptape)     | A modular Python framework for building AI-powered applications.                                        |
+| [Weave](https://github.com/wandb/weave)        | Weave is a toolkit for developing Generative AI applications.                                          |
+| [Llama Stack](https://github.com/meta-llama/llama-stack)  | Build Llama Apps.                                                                                      |
 
 #### 2.2.2 Multi API Access
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| LiteLLM      | Library to call 100+ LLM APIs in OpenAI format.                                                        | [Link](https://github.com/BerriAI/litellm) |
-| AI Gateway   | A Blazing Fast AI Gateway with integrated Guardrails. Route to 200+ LLMs, 50+ AI Guardrails with 1 fast & friendly API.                                                 | [Link](https://github.com/Portkey-AI/gateway) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [LiteLLM](https://github.com/BerriAI/litellm)      | Library to call 100+ LLM APIs in OpenAI format.                                                        |
+| [AI Gateway](https://github.com/Portkey-AI/gateway)   | A Blazing Fast AI Gateway with integrated Guardrails. Route to 200+ LLMs, 50+ AI Guardrails with 1 fast & friendly API.                                                 |
 
 #### 2.2.3 Routers
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| RouteLLM     | Framework for serving and evaluating LLM routers - save LLM costs without compromising quality. Drop-in replacement for OpenAI's client to route simpler queries to cheaper models.                                                      | [Link](https://github.com/lm-sys/RouteLLM) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [RouteLLM](https://github.com/lm-sys/RouteLLM)     | Framework for serving and evaluating LLM routers - save LLM costs without compromising quality. Drop-in replacement for OpenAI's client to route simpler queries to cheaper models.                                                      |
 
 #### 2.2.4 Memory
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| mem0         | The Memory layer for your AI apps.                                                                     | [Link](https://github.com/mem0ai/mem0) |
-| Memoripy     | An AI memory layer with short- and long-term storage, semantic clustering, and optional memory decay for context-aware applications. | [Link](https://github.com/caspianmoon/memoripy) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [mem0](https://github.com/mem0ai/mem0)         | The Memory layer for your AI apps.                                                                     |
+| [Memoripy](https://github.com/caspianmoon/memoripy)     | An AI memory layer with short- and long-term storage, semantic clustering, and optional memory decay for context-aware applications. |
 
 #### 2.2.5 Interface
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| Streamlit    | A faster way to build and share data apps. Streamlit lets you transform Python scripts into interactive web apps in minutes                                                             | [Link](https://github.com/streamlit/streamlit) |
-| Gradio       | Build and share delightful machine learning apps, all in Python.                                       | [Link](https://github.com/gradio-app/gradio) |
-| AI SDK UI    | Build chat and generative user interfaces.                                                             | [Link](https://sdk.vercel.ai/docs/introduction) |
-| AI-Gradio    | Create AI apps powered by various AI providers.                                                        | [Link](https://github.com/AK391/ai-gradio) |
-| Simpleaichat | Python package for easily interfacing with chat apps, with robust features and minimal code complexity. | [Link](https://github.com/minimaxir/simpleaichat) |
-| Chainlit     | Build production-ready Conversational AI applications in minutes.                                      | [Link](https://github.com/Chainlit/chainlit) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [Streamlit](https://github.com/streamlit/streamlit)    | A faster way to build and share data apps. Streamlit lets you transform Python scripts into interactive web apps in minutes                                                             |
+| [Gradio](https://github.com/gradio-app/gradio)       | Build and share delightful machine learning apps, all in Python.                                       |
+| [AI SDK UI](https://sdk.vercel.ai/docs/introduction)    | Build chat and generative user interfaces.                                                             |
+| [AI-Gradio](https://github.com/AK391/ai-gradio)    | Create AI apps powered by various AI providers.                                                        |
+| [Simpleaichat](https://github.com/minimaxir/simpleaichat) | Python package for easily interfacing with chat apps, with robust features and minimal code complexity. |
+| [Chainlit](https://github.com/Chainlit/chainlit)     | Build production-ready Conversational AI applications in minutes.                                      |
 
 #### 2.2.6 Low Code
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| LangFlow     | LangFlow is a low-code app builder for RAG and multi-agent AI applications. It’s Python-based and agnostic to any model, API, or database.                           | [Link](https://github.com/langflow-ai/langflow) |
-| n8n          | n8n is a low-code automation tool that allows users to create complex workflows by connecting various applications and services. It offers both self-hosted and cloud-hosted options, with a visual interface.                           | [Link](https://github.com/n8n-io/n8n) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [LangFlow](https://github.com/langflow-ai/langflow)     | LangFlow is a low-code app builder for RAG and multi-agent AI applications. It’s Python-based and agnostic to any model, API, or database.                           |
+| [n8n](https://github.com/n8n-io/n8n)          | n8n is a low-code automation tool that allows users to create complex workflows by connecting various applications and services. It offers both self-hosted and cloud-hosted options, with a visual interface.                           |
 
 #### 2.2.7 Cache
 
-| Library        | Description                                                                                               | Link  |
-|--------------|------------------------------------------------------------------------------------------------------|-------|
-| GPTCache     | A Library for Creating Semantic Cache for LLM Queries. Slash Your LLM API Costs by 10x 💰, Boost Speed by 100x. Fully integrated with LangChain and LlamaIndex.                               | [Link](https://github.com/zilliztech/gptcache) |
+| Library        | Description                                                                                               |
+|--------------|------------------------------------------------------------------------------------------------------|
+| [GPTCache](https://github.com/zilliztech/gptcache)     | A Library for Creating Semantic Cache for LLM Queries. Slash Your LLM API Costs by 10x 💰, Boost Speed by 100x. Fully integrated with LangChain and LlamaIndex.                               |
 
 ### 2.3 LLM Retrieval Augmented Generation (RAG)
 
 This section presents libraries focused on Retrieval Augmented Generation (RAG), a technique for enhancing LLMs with external knowledge sources for more accurate and context-aware responses.
 
-| Library         | Description                                                                                                      | Link  |
-|---------------|----------------------------------------------------------------------------------------------------------------|-------|
-| FastGraph RAG | Streamlined and promptable Fast GraphRAG framework designed for interpretable, high-precision, agent-driven retrieval workflows. | [Link](https://github.com/circlemind-ai/fast-graphrag) |
-| Chonkie       | RAG chunking library that is lightweight, lightning-fast, and easy to use.                                      | [Link](https://github.com/chonkie-ai/chonkie) |
-| RAGChecker    | A Fine-grained Framework For Diagnosing RAG.                                                                   | [Link](https://github.com/amazon-science/RAGChecker) |
-| RAG to Riches | Build, scale, and deploy state-of-the-art Retrieval-Augmented Generation applications.                         | [Link](https://github.com/SciPhi-AI/R2R) |
-| BeyondLLM     | Beyond LLM offers an all-in-one toolkit for experimentation, evaluation, and deployment of Retrieval-Augmented Generation (RAG) systems. | [Link](https://github.com/aiplanethub/beyondllm) |
-| SQLite-Vec    | A vector search SQLite extension that runs anywhere!                                                           | [Link](https://github.com/asg017/sqlite-vec) |
-| fastRAG       | fastRAG is a research framework for efficient and optimized retrieval-augmented generative pipelines, incorporating state-of-the-art LLMs and Information Retrieval. | [Link](https://github.com/IntelLabs/fastRAG) |
-| FlashRAG      | A Python Toolkit for Efficient RAG Research.                                                                   | [Link](https://github.com/RUC-NLPIR/FlashRAG) |
-| Llmware       | Unified framework for building enterprise RAG pipelines with small, specialized models.                        | [Link](https://github.com/llmware-ai/llmware) |
-| Rerankers     | A lightweight unified API for various reranking models.                                                        | [Link](https://github.com/AnswerDotAI/rerankers) |
-| Vectara       | Build Agentic RAG applications.                                                                                | [Link](https://vectara.github.io/py-vectara-agentic/latest/) |
+| Library         | Description                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------|
+| [FastGraph RAG](https://github.com/circlemind-ai/fast-graphrag) | Streamlined and promptable Fast GraphRAG framework designed for interpretable, high-precision, agent-driven retrieval workflows. |
+| [Chonkie](https://github.com/chonkie-ai/chonkie)       | RAG chunking library that is lightweight, lightning-fast, and easy to use.                                      |
+| [RAGChecker](https://github.com/amazon-science/RAGChecker)    | A Fine-grained Framework For Diagnosing RAG.                                                                   |
+| [RAG to Riches](https://github.com/SciPhi-AI/R2R) | Build, scale, and deploy state-of-the-art Retrieval-Augmented Generation applications.                         |
+| [BeyondLLM](https://github.com/aiplanethub/beyondllm)     | Beyond LLM offers an all-in-one toolkit for experimentation, evaluation, and deployment of Retrieval-Augmented Generation (RAG) systems. |
+| [SQLite-Vec](https://github.com/asg017/sqlite-vec)    | A vector search SQLite extension that runs anywhere!                                                           |
+| [fastRAG](https://github.com/IntelLabs/fastRAG)       | fastRAG is a research framework for efficient and optimized retrieval-augmented generative pipelines, incorporating state-of-the-art LLMs and Information Retrieval. |
+| [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG)      | A Python Toolkit for Efficient RAG Research.                                                                   |
+| [Llmware](https://github.com/llmware-ai/llmware)       | Unified framework for building enterprise RAG pipelines with small, specialized models.                        |
+| [Rerankers](https://github.com/AnswerDotAI/rerankers)     | A lightweight unified API for various reranking models.                                                        |
+| [Vectara](https://vectara.github.io/py-vectara-agentic/latest/)       | Build Agentic RAG applications.                                                                                |
 
-### 2.4 LLM Inference
+### 2.4 LLM Vector Stores
+
+This section lists databases relevant to LLM applications, including specialized vector stores for embedding similarity search and general-purpose databases that may be used for storing LLM-related data or metadata.
+
+| Library      | Description                                                                                                                                   | Deployment     |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| [Pinecone](https://www.pinecone.io/)      | A managed vector database optimized for similarity search, enabling efficient retrieval of data based on vector embeddings.                  | Cloud (Managed)   |
+| [Weaviate](https://www.weaviate.io/)      | An open-source vector search engine that allows you to store and search data based on vector embeddings.                                       | Self-Hosted/Cloud |
+| [ChromaDB](https://www.trychroma.com/)      | An open-source embedding database. Chroma makes it easy to build LLM apps by making knowledge, facts, and skills pluggable for LLMs.                                                        | Self-Hosted        |
+| [Milvus](https://milvus.io/)         | Open-source vector database for embedding similarity search and AI applications.                                                                   | Self-Hosted/Cloud |
+| [Qdrant](https://qdrant.tech/)        | An open-source vector database and search engine designed for high-performance similarity search and neural network-based solutions.        | Self-Hosted/Cloud |
+| [FAISS](https://github.com/facebookresearch/faiss)         | A library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM.  | Library (Self-Implemented) |
+| [PostgreSQL](https://www.postgresql.org/)    | A powerful, open-source relational database management system.  Can be used to store LLM data or metadata, but not optimized for vector search without extensions. | Self-Hosted/Cloud |
+| [MySQL](https://www.mysql.com/)         | A popular open-source relational database management system. Can be used to store LLM data or metadata. | Self-Hosted/Cloud |
+| [MongoDB](https://www.mongodb.com/)       | A NoSQL document database, providing flexibility and scalability for handling unstructured and semi-structured data.                         | Self-Hosted/Cloud |
+
+**Comments:**
+
+*   **Pinecone:** Excellent for a managed solution, ease of use, and production-ready scalability. Use when you want to focus on building your application rather than managing infrastructure. Offers a proprietary API for vector similarity search.
+*   **Weaviate:** Good choice if you want an open-source solution with GraphQL and strong semantic search capabilities. Supports both GraphQL and vector similarity search for querying. Can be self-hosted or used with Weaviate Cloud Service (WCS).
+*   **ChromaDB:** Designed for simplicity and ease of use, great for local development and quick prototyping. Good Python integration. Offers a proprietary API for vector similarity search.
+*   **Milvus:** A powerful, scalable vector database designed for large-scale deployments. More complex to set up and manage but offers high performance. Uses Vector Similarity Search as its query logic.
+*   **Qdrant:** Provides a good balance of performance, scalability, and ease of use. Offers a flexible deployment and rich feature set. Uses Vector Similarity Search as its query logic.
+*   **FAISS:** Best suited when you need a library to build custom indexes and have more control over the implementation. Excellent if you are memory-constrained. Offers Vector Similarity Search (Library). Requires self-implementation for deployment.
+*   **PostgreSQL:** A robust and reliable relational database. Primarily uses SQL for querying. Consider for storing structured LLM data, but requires extensions (e.g., pgvector) for efficient vector similarity search. Available for self-hosting or on various cloud platforms.
+*   **MySQL:** A widely used relational database. Primarily uses SQL for querying. Consider for storing structured LLM data. Available for self-hosting or on various cloud platforms.
+*   **MongoDB:** A flexible NoSQL database. Uses MongoDB Query Language (MQL). Consider for storing unstructured or semi-structured LLM data and metadata. Available for self-hosting or through MongoDB Atlas on various cloud platforms.
+
+**Key for "Deployment" Column:**
+
+*   **Cloud (Managed):** Primarily offered as a managed service, where the provider handles infrastructure and maintenance.
+*   **Self-Hosted:** Designed to be deployed and managed on your own infrastructure.
+*   **Self-Hosted/Cloud:** Available for self-hosting but also offered as a managed service on a cloud platform.
+*   **Library (Self-Implemented):** Requires you to implement and deploy the solution yourself using the library.                                                              |                                                                       |                                                                                       |
+### 2.5 LLM Inference
 
 This section presents libraries for optimizing the inference process of Large Language Models (LLMs), aiming for faster performance and efficient resource utilization.
 
@@ -117,7 +155,7 @@ This section presents libraries for optimizing the inference process of Large La
 | TensorRT-LLM  | TensorRT-LLM is a library for optimizing Large Language Model (LLM) inference.                        | [Link](https://github.com/NVIDIA/TensorRT-LLM) |
 | WebLLM        | High-performance In-browser LLM Inference Engine.                                                     | [Link](https://github.com/mlc-ai/web-llm) |
 
-### 2.5 LLM Serving
+### 2.6 LLM Serving
 
 This section highlights libraries for serving Large Language Models (LLMs) in a production environment, enabling you to deploy and manage LLMs for real-world applications.
 
@@ -126,11 +164,11 @@ This section highlights libraries for serving Large Language Models (LLMs) in a 
 | Langcorn  | Serving LangChain LLM apps and agents automagically with FastAPI.       | [Link](https://github.com/msoedov/langcorn) |
 | LitServe  | Lightning-fast serving engine for any AI model of any size. It augments FastAPI with features like batching, streaming, and GPU autoscaling.           | [Link](https://github.com/Lightning-AI/LitServe) |
 
-### 2.6 LLM Data Handling (Extraction & Generation)
+### 2.7 LLM Data Handling (Extraction & Generation)
 
 This section combines tools for both extracting data to feed into LLMs and generating new data using LLMs.
 
-#### 2.6.1 LLM Data Extraction
+#### 2.7.1 LLM Data Extraction
 
 This section provides libraries for extracting data from various sources (web pages, documents, etc.) to be used as input for Large Language Models (LLMs).
 
@@ -145,7 +183,7 @@ This section provides libraries for extracting data from various sources (web pa
 | MegaParse      | Parser for every type of document.                                                                                                    | [Link](https://github.com/quivrhq/megaparse) |
 | ExtractThinker | Document Intelligence library for LLMs.                                                                                               | [Link](https://github.com/enoch3712/ExtractThinker) |
 
-#### 2.6.2 LLM Data Generation
+#### 2.7.2 LLM Data Generation
 
 This section features libraries for generating synthetic data or augmenting existing datasets using Large Language Models (LLMs).
 
@@ -155,8 +193,9 @@ This section features libraries for generating synthetic data or augmenting exis
 | fabricator   | A flexible open-source framework to generate datasets with large language models.                   | [Link](https://github.com/flairNLP/fabricator) |
 | Promptwright | Synthetic Dataset Generation Library.                                                               | [Link](https://github.com/stacklok/promptwright) |
 | EasyInstruct | An Easy-to-use Instruction Processing Framework for Large Language Models.                          | [Link](https://github.com/zjunlp/EasyInstruct) |
+| Text Machina| A modular and extensible Python framework, designed to aid in the creation of high-quality, unbiased datasets to build robust models for MGT-related tasks such as detection, attribution, and boundary detection. | [Link](https://github.com/Genaios/TextMachina) |
 
-### 2.7 LLM Agents
+### 2.8 LLM Agents
 
 This section showcases libraries for building autonomous agents powered by Large Language Models (LLMs), enabling them to perform complex tasks and interact with their environment.
 
@@ -187,7 +226,7 @@ This section showcases libraries for building autonomous agents powered by Large
 | Agentarium    | Framework for creating and managing simulations populated with AI-powered agents.                        | [Link](https://github.com/Thytu/Agentarium) |
 | Upsonic       | Reliable AI agent framework that supports MCP.                                                          | [Link](https://github.com/upsonic/upsonic) |
 
-### 2.8 LLM Evaluation
+### 2.9 LLM Evaluation
 
 This section lists libraries and tools for evaluating the performance and quality of Large Language Models (LLMs).
 
@@ -207,8 +246,9 @@ This section lists libraries and tools for evaluating the performance and qualit
 | AgentEvals | Evaluators and utilities for evaluating the performance of your agents.                                         | [Link](https://github.com/langchain-ai/agentevals) |
 | LLMBox     | A comprehensive library for implementing LLMs, including a unified training pipeline and comprehensive model evaluation. | [Link](https://github.com/RUCAIBox/LLMBox) |
 | Opik       | An open-source end-to-end LLM Development Platform which also includes LLM evaluation.                           | [Link](https://github.com/comet-ml/opik) |
+| pandas-ai   | Chat with your database (SQL, CSV, pandas, polars, MongoDB, NoSQL, etc.). | [Link](https://github.com/Sinaptik-AI/pandas-ai) |
 
-### 2.9 LLM Monitoring
+### 2.10 LLM Monitoring
 
 This section presents libraries and platforms for monitoring the performance, health, and usage of Large Language Models (LLMs) in production.
 
@@ -222,7 +262,7 @@ This section presents libraries and platforms for monitoring the performance, he
 | Phoenix            | An open-source AI observability platform designed for experimentation, evaluation, and troubleshooting. | [Link](https://github.com/Arize-ai/phoenix) |
 | Observers          | A Lightweight Library for AI Observability.                                                       | [Link](https://github.com/cfahlgren1/observers) |
 
-### 2.10 LLM Prompt Engineering
+### 2.11 LLM Prompt Engineering
 
 This section highlights libraries and tools that assist in crafting effective prompts for Large Language Models (LLMs), optimizing the LLM's output.
 
@@ -238,7 +278,7 @@ This section highlights libraries and tools that assist in crafting effective pr
 | Py-priompt        | Prompt design library.                                                                                        | [Link](https://github.com/zenbase-ai/py-priompt) |
 | Promptimizer      | Prompt optimization library.                                                                                  | [Link](https://github.com/hinthornw/promptimizer) |
 
-### 2.11 LLM Structured Output Generation
+### 2.12 LLM Structured Output Generation
 
 This section features libraries for guiding Large Language Models (LLMs) to generate structured outputs, such as JSON or other specific formats.
 
@@ -251,7 +291,7 @@ This section features libraries for guiding Large Language Models (LLMs) to gene
 | LMQL      | A language for constraint-guided and efficient LLM programming. | [Link](https://github.com/eth-sri/lmql) |
 | Jsonformer | A Bulletproof Way to Generate Structured JSON from Language Models. | [Link](https://github.com/1rgs/jsonformer) |
 
-### 2.12 LLM Safety and Security
+### 2.13 LLM Safety and Security
 
 This section lists libraries for enhancing the safety and security of Large Language Models (LLMs), mitigating risks such as jailbreaking, prompt injection, and the generation of harmful content.
 
@@ -265,7 +305,7 @@ This section lists libraries for enhancing the safety and security of Large Lang
 | NeMo Guardrails | NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. | [Link](https://github.com/NVIDIA/NeMo-Guardrails) |
 | Garak        | LLM vulnerability scanner | [Link](https://github.com/NVIDIA/garak) |
 
-### 2.13 LLM Embedding Models
+### 2.14 LLM Embedding Models
 
 This section presents libraries for generating text embeddings, which are vector representations of text used to capture semantic meaning and facilitate various NLP tasks.
 
@@ -274,3 +314,19 @@ This section presents libraries for generating text embeddings, which are vector
 | Sentence-Transformers     | State-of-the-Art Text Embeddings                   | [Link](https://github.com/UKPLab/sentence-transformers) |
 | Model2Vec                | Fast State-of-the-Art Static Embeddings             | [Link](https://github.com/MinishLab/model2vec) |
 | Text Embedding Inference | A blazing fast inference solution for text embeddings models. TEI enables high-performance extraction for the most popular models, including FlagEmbedding, Ember, GTE and E5. | [Link](https://github.com/huggingface/text-embeddings-inference) |
+
+### 2.15 LLM Learning Resources and Tutorials
+
+This section provides a curated list of resources for learning about Large Language Models (LLMs), covering various topics from fundamental concepts to advanced techniques.
+
+Title | Topic | Link |
+| :---         |     :---:      |          ---: |
+| GenAI HuggingFace   | Fine Tuning     | [Link](https://github.com/huggingface/smol-course)    |
+| NLP + GENAI HuggingFace   | All topics     | [Link](https://huggingface.co/learn/nlp-course/en/chapter1/1?fw=pt)    |
+| GenAI Groq |  AI Agents | [Link](https://github.com/neural-maze/agentic_patterns) |
+| GenAI Parlance | RAG Evals Finetuning- Videos | [Link](https://parlance-labs.com/education/)  |
+| Interview     | Data Science     | [Link](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers)      |
+|| The Ultra-Scale Playbook:
+| Training LLMs on GPU Clusters |  | [Link](https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=high_level_overview) |
+|| vLLM | | [Link](https://github.com/vllm-project/vllm) |
+|| Unsloth.ai | | [Link](https://www.unsloth.ai/introducing) |
