@@ -2,17 +2,17 @@
 
 ## Explore the AI-Dev-Kit: Quick Navigation
 
-## 1. Core AI Development
+## [1. Core AI Development](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md)
 
-### 1.1 Machine Learning Frameworks
+### [1.1 Machine Learning Frameworks](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md#11-machine-learning-frameworks)
 
-### 1.2 Data Science Libraries
+### [1.2 Data Science Libraries](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md#12-data-science-libraries)
 
-### 1.3 Optimization Libraries
+### [1.3 Optimization Libraries](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md#13-optimization-libraries)
 
-### 1.4 Computer Vision
+### [1.4 Computer Vision](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md#14-computer-vision)
 
-### 1.5 Natural Language Processing (General)
+### [1.5 Natural Language Processing (General)](https://github.com/Charikshith/GEN_AI_REPO/blob/main/AI_Dev_Kit/01-Core_AI_Development.md#15-natural-language-processing-general)
 
 ## 2. LLM-Specific Tools, Resources, and Techniques
 
