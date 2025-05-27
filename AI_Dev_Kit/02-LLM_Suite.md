@@ -1,5 +1,5 @@
-## 2. LLM-Suite
-
+ ## <div style="text-align: center;">2. LLM-Suite</div>
+ 
 ||||
 |---|---|---|
 | [🚀 LLM Training & Fine-Tuning](#21-llm-training-and-fine-tuning) | [🧱 LLM Application Dev](#22-llm-application-development) | [🩸 LLM RAG](#23-llm-retrieval-augmented-generation-rag) |
