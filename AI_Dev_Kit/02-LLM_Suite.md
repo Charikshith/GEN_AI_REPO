@@ -100,7 +100,7 @@ This section features frameworks, libraries, and tools designed for building app
 |--------------|------------------------------------------------------------------------------------------------------|
 | [GPTCache](https://github.com/zilliztech/gptcache)     | A Library for Creating Semantic Cache for LLM Queries. Slash Your LLM API Costs by 10x 💰, Boost Speed by 100x. Fully integrated with LangChain and LlamaIndex.                               |
 
-### 2.3 LLM Retrieval Augmented Generation (RAG)
+### 2.3 Retrieval Augmented Generation (RAG)
 
 This section presents libraries focused on Retrieval Augmented Generation (RAG), a technique for enhancing LLMs with external knowledge sources for more accurate and context-aware responses.
 
@@ -117,6 +117,13 @@ This section presents libraries focused on Retrieval Augmented Generation (RAG),
 | [Llmware](https://github.com/llmware-ai/llmware)       | Unified framework for building enterprise RAG pipelines with small, specialized models.                        |
 | [Rerankers](https://github.com/AnswerDotAI/rerankers)     | A lightweight unified API for various reranking models.                                                        |
 | [Vectara](https://vectara.github.io/py-vectara-agentic/latest/)       | Build Agentic RAG applications.                                                                                |
+
+#### 2.3.1 Retrieval Augmented Generation (RAG) - Fine Tuning
+
+| Library         | Description                                                                                                      |
+|---------------|----------------------------------------------------------------------------------------------------------------|
+| [Fed RAG](https://github.com/VectorInstitute/fed-rag) | FedRAG is an open-source framework for fine-tuning Retrieval-Augmented Generation (RAG) systems across both centralized and federated architectures. |
+| |                                                                                 |
 
 ### 2.4 LLM Vector Stores
 
