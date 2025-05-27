@@ -2,11 +2,11 @@
  
 ||||
 |---|---|---|
-| [🚀 LLM Training & Fine-Tuning](#21-llm-training-and-fine-tuning) | [🧱 LLM Application Dev](#22-llm-application-development) | [🩸 LLM RAG](#23-retrieval-augmented-generation-rag) |
-| [🗂️ LLM Vector Databases](#24-llm-vector-stores)| [🟩 LLM Inference](#25-llm-inference) | [🚧 LLM Serving](#26-llm-serving) |
-| [📤 LLM Data Handling](#27-llm-data-handling-extraction--generation) | [💎 LLM Agents](#28-llm-agents)|[⚖️ LLM Evaluation](#29-llm-evaluation) |
-| [🔍 LLM Monitoring](#210-llm-monitoring) | [📅 LLM Prompt Engineering](#211-llm-prompt-engineering) | [📝 LLM Structured Output](#212-llm-structured-output-generation) |
-| [🛑 LLM Safety & Security](#213-llm-safety-and-security) | [💠 LLM Embedding Models](#214-llm-embedding-models) | [❇️ LLM Learning Resources](#215-llm-learning-resources-and-tutorials) |
+| [🚀  Training & Fine-Tuning](#21-llm-training-and-fine-tuning) | [🧱  Application Dev](#22-llm-application-development) | [🩸  RAG](#23-retrieval-augmented-generation-rag) |
+| [🗂️  Vector Databases](#24-llm-vector-stores)| [🟩  Inference](#25-llm-inference) | [🚧  Serving](#26-llm-serving) |
+| [📤  Data Handling](#27-llm-data-handling-extraction--generation) | [💎  Agents](#28-llm-agents)|[⚖️  Evaluation](#29-llm-evaluation) |
+| [🔍  Monitoring](#210-llm-monitoring) | [📅  Prompt Engineering](#211-llm-prompt-engineering) | [📝  Structured Output](#212-llm-structured-output-generation) |
+| [🛑  Safety & Security](#213-llm-safety-and-security) | [💠  Embedding Models](#214-llm-embedding-models) | [❇️  Learning Resources](#215-llm-learning-resources-and-tutorials) |
 
 | SLM             | Description                                                                                     |
 |---------------------|-------------------------------------------------------------------------------------------------|
