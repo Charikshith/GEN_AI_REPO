@@ -1,4 +1,4 @@
- ## <div style="text-align: center;">2. LLM-Suite</div>
+## <p align="center"> 2. LLM-Suite </p>
  
 ||||
 |---|---|---|
