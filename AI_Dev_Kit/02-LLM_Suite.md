@@ -106,7 +106,9 @@ This section presents libraries focused on Retrieval Augmented Generation (RAG),
 
 | Library         | Description                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------|
-| [FastGraph RAG](https://github.com/circlemind-ai/fast-graphrag) | Streamlined and promptable Fast GraphRAG framework designed for interpretable, high-precision, agent-driven retrieval workflows. |
+| [FastGraph RAG](https://github.com/circlemind-ai/fast-graphrag) | Streamlined and promptable **Fast GraphRAG** framework designed for interpretable, high-precision, agent-driven retrieval workflows. |
+| [CocoIndex](https://github.com/cocoindex-io/cocoindex) | CocoIndex is an ultra performant data transformation framework, written in Rust. It easy to prepare fresh data for AI - either creating embedding, building **knowledge graphs**, or data transformations - and take real-time data pipelines beyond traditional SQL. |
+| [Graphiti](https://github.com/getzep/graphiti)       |     Build Real-Time Knowledge Graphs for AI Agents                                  |
 | [Chonkie](https://github.com/chonkie-ai/chonkie)       | RAG chunking library that is lightweight, lightning-fast, and easy to use.                                      |
 | [RAGChecker](https://github.com/amazon-science/RAGChecker)    | A Fine-grained Framework For Diagnosing RAG.                                                                   |
 | [RAG to Riches](https://github.com/SciPhi-AI/R2R) | Build, scale, and deploy state-of-the-art Retrieval-Augmented Generation applications.                         |
