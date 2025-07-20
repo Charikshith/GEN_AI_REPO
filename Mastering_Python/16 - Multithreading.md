@@ -307,7 +307,7 @@ If you have any questions or need further clarification, feel free to ask in the
 ---
 
 
-## 003 Daemon Threads
+# 003 Daemon Threads
 
 
 
@@ -385,7 +385,7 @@ By following these guidelines and understanding how daemon threads work, you can
 ---
 
 
-## 004 Semaphores
+# 004 Semaphores
 
 
 
@@ -478,7 +478,7 @@ By understanding and implementing semaphores effectively, you can write more eff
 ---
 
 
-## 005 With Lock  Semaphore
+# 005 With Lock  Semaphore
 
 
 
@@ -571,11 +571,11 @@ By using context managers with locks and semaphores, you can write more robust a
 ---
 
 
-## 006 Race Conditions
+# 006 Race Conditions
 
 
 
-```markdown
+
 ## Understanding Race Conditions in Python: A Practical Example
 
 Race conditions are a common issue in multithreaded programming, leading to unpredictable behavior. this section demonstrates a race condition using Python's `threading` module and explains how to resolve it.
@@ -676,6 +676,6 @@ if __name__ == "__main__":
 5. **Profile and Optimize**: Synchronization can impact performance; ensure it's necessary and optimized.
 
 This example illustrates the importance of proper synchronization in multithreaded environments to prevent race conditions.
-```
+
 
 ---

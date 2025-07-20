@@ -1,6 +1,6 @@
 
 
-## 001 Intro
+# 001 Intro
 
 
 
@@ -87,7 +87,7 @@ thread2.join()
 
 ### Multiprocessing
 
-Multiprocessing is the most powerful of the three, but it also comes with more complexity. It allows your program to run multiple processes in parallel, each with its own memory space and interpreter.
+Multiprocessing is the most powerful of the three, but it also comes with more complexity. It allows your program to run multiple processes in parallel, each with its own memory space and interpreter. Each processor can act as each thread during execution.
 
 #### How It Works
 
@@ -176,14 +176,14 @@ One of the most confusing aspects of concurrency is understanding the difference
 
 ### Conclusion
 
-In this guide, we've covered the basics of asynchronous programming, multithreading, and multiprocessing in Python. By understanding the differences between these concurrency models, you can make informed decisions about which one to use for your specific use case. Remember to always consider the type of task (I/O-bound vs. CPU-bound) and the hardware you're working with when choosing a concurrency strategy.
+In this we've covered the basics of asynchronous programming, multithreading, and multiprocessing in Python. By understanding the differences between these concurrency models, you can make informed decisions about which one to use for your specific use case. Remember to always consider the type of task (I/O-bound vs. CPU-bound) and the hardware you're working with when choosing a concurrency strategy.
 
 In the next section of the course, we'll dive deeper into the `multiprocessing` module and explore how to use it to speed up your Python programs. Stay tuned!
 
 ---
 
 
-## 002 Processes
+# 002 Processes
 
 
 
@@ -196,7 +196,7 @@ In this lesson, we will explore how to create processes in Python and how they c
 Before diving into multiprocessing, let’s create a helper script that will contain functions to time our code, generate timestamps, and simulate time-consuming tasks.
 
 ```python
-from time import performance_counter
+from time import perf_counter
 from functools import wraps
 from datetime import datetime
 
@@ -205,7 +205,7 @@ def get_time(func):
     def wrapper(*args, **kwargs):
         start = performance_counter()
         result = func(*args, **kwargs)
-        end = performance_counter()
+        end = perf_counter()
         print(f"Time taken: {end - start} seconds")
         return result
     return wrapper
@@ -234,7 +234,7 @@ import multiprocessing as mp
 from time_stuff import get_time, timestamp, kill_time
 import os
 
-@get_time
+
 def process_function(param: str):
     print(f"Starting process: {mp.current_process().name}")
     print(f"Process ID: {os.getpid()}")
@@ -243,6 +243,7 @@ def process_function(param: str):
     print(f"Process ID {os.getpid()} finished")
     print(f"Timestamp: {timestamp()}")
 
+@get_time
 def main():
     process1 = mp.Process(
         target=process_function,
@@ -281,7 +282,7 @@ import threading as th
 from time_stuff import get_time, timestamp, kill_time
 import os
 
-@get_time
+
 def thread_function(param: str):
     print(f"Starting thread: {th.current_thread().name}")
     print(f"Thread ID: {os.getpid()}")
@@ -290,6 +291,7 @@ def thread_function(param: str):
     print(f"Thread ID {os.getpid()} finished")
     print(f"Timestamp: {timestamp()}")
 
+@get_time
 def main():
     thread1 = th.Thread(
         target=thread_function,
@@ -338,7 +340,7 @@ By understanding when and how to use multiprocessing, you can significantly spee
 ---
 
 
-## 003 Pools (Map)
+# 003 Pools (Map)
 
 
 
@@ -346,7 +348,7 @@ By understanding when and how to use multiprocessing, you can significantly spee
 
 ### Introduction to Process Pools
 
-In the previous lesson, we explored how to create processes using Python's `multiprocessing` module. This time, we're diving into **process pools**, a powerful way to parallelize computations across multiple CPU cores. Process pools allow you to distribute tasks efficiently, making your programs run faster by leveraging all available processing power.
+In the previous section, we explored how to create processes using Python's `multiprocessing` module. This time, we're diving into **process pools**, a powerful way to parallelize computations across multiple CPU cores. Process pools allow you to distribute tasks efficiently, making your programs run faster by leveraging all available processing power.
 
 ### What Are Process Pools?
 
@@ -366,6 +368,7 @@ def convert_to_x(number: int) -> str:
     sleep(2)
     return 'x' * number
 
+@get_time
 def main():
     start_time = time()
     
@@ -374,11 +377,11 @@ def main():
     print(f"Available CPU cores: {cores}")
     
     # Create a list of numbers to process
-    values: Tuple[int, ...] = tuple(range(1, 9))  # Processes 8 values
+    values: tuple[int, ...] = tuple(range(1, 9))  # Processes 8 values
     
-    # Create a pool of worker processes
-    with mp.Pool() as pool:
-        results: List[str] = pool.map(convert_to_x, values)
+# Create a pool of worker processes (limiting max processors to 5)
+    with mp.Pool(processes=5) as pool:
+        results: list[str] = pool.map(convert_to_x, values)
         print("\nResults:")
         print(results)
     
@@ -424,18 +427,65 @@ When you run this code, you'll see that the tasks are distributed across all ava
 - **Handle Exceptions**: Always handle exceptions within your worker functions to avoid silent failures.
 - **Async Processing**: For more control over task execution, consider using `Pool.apply_async()` for asynchronous processing.
 
+```python
+import multiprocessing as mp
+from time import sleep, perf_counter
+import random
+
+def process_item(item):
+    """Simulates processing an item with variable processing time"""
+    worker = mp.current_process().name
+    process_time = random.uniform(0.5, 2.0)  # Random processing time
+    
+    print(f"[{worker}] Processing {item} (takes {process_time:.1f}s)")
+    sleep(process_time)  # Simulate work
+    
+    result = f"{item}-processed"
+    print(f"[{worker}] Finished {item} => {result}")
+    return result
+
+def main():
+    start_time = perf_counter()
+    
+    # Create a list of items to process
+    items = [f"Task-{i}" for i in range(1, 9)]
+    print("Items to process:", items)
+    
+    # Create a process pool with 4 workers
+    with mp.Pool(processes=4) as pool:
+        # Submit all tasks asynchronously
+        async_results = [
+            pool.apply_async(process_item, (item,))
+            for item in items
+        ]
+        
+        print("\nAll tasks submitted. Waiting for results...\n")
+        
+        # Collect results as they complete
+        results = [res.get() for res in async_results]
+    
+    total_time = perf_counter() - start_time
+    print("\nFinal results:", results)
+    print(f"Total processing time: {total_time:.2f} seconds")
+    print(f"Sequential estimate: {len(items)*1.25:.2f} seconds")
+    print(f"Speedup factor: {len(items)*1.25/total_time:.1f}x")
+
+if __name__ == "__main__":
+    main()
+```
+
 By following these guidelines and best practices, you can effectively utilize process pools to speed up your Python programs and make them more efficient.
 
 ---
 
 
-## 004 Pools (Starmap)
+# 004 Pools (Starmap)
 
 
 
 ## Using Multiple Arguments with `Pool.starmap()` in Python
 
-In the previous lesson, we explored how to create a pool and execute functions in parallel using `Pool.map()`. However, `Pool.map()` is limited to functions that take a single argument. In this lesson, we’ll learn how to pass multiple arguments to functions using `Pool.starmap()`.
+In the previous section, we explored how to create a pool and execute functions in parallel using `Pool.map()`. However, `Pool.map()` is limited to functions that take a single argument. In this lesson, we’ll learn how to pass multiple arguments to functions using `Pool.starmap()`.
 
 ---
 
@@ -457,14 +507,15 @@ def add_numbers(*args: tuple[float, ...]) -> float:
     time.sleep(1)  # Simulating an intensive task
     return sum(args)
 
+@get_time 
 def main():
     with Pool() as pool:
         # Define the arguments as a tuple of tuples
         values: tuple[tuple[float, ...], ...] = (
-            (1, 2),
+            (1, 2, 10),
             (3, 4),
             (5, 6),
-            (7, 8)
+            (7, 8, 2, 3)
         )
         
         # Use starmap to pass multiple arguments to the function
@@ -508,13 +559,13 @@ By following these guidelines and examples, you can effectively use `Pool.starma
 ---
 
 
-## 005 Pools (Multiple Functions)
+# 005 Pools (Multiple Functions)
 
 
 
 ## Running Multiple Functions in a Pool with Python
 
-In this blog post, we'll explore how to run multiple functions in a pool using Python's `multiprocessing` module. This technique is particularly useful when you need to execute different functions concurrently, each with their own set of arguments.
+In this section, we'll explore how to run multiple functions in a pool using Python's `multiprocessing` module. This technique is particularly useful when you need to execute different functions concurrently, each with their own set of arguments.
 
 ### Prerequisites
 
@@ -522,7 +573,7 @@ Before diving into the code, make sure you have a basic understanding of Python'
 
 ### Running Multiple Functions in a Pool
 
-In previous lessons, we learned how to run a single function with multiple arguments using `Pool.map()`. However, what if you need to run multiple different functions, each with their own arguments? Let's find out how to achieve this.
+In previous sections, we learned how to run a single function with multiple arguments using `Pool.map()`. However, what if you need to run multiple different functions, each with their own arguments? Let's find out how to achieve this.
 
 #### Step 1: Import Necessary Modules
 
@@ -575,6 +626,7 @@ Now, let's use `Pool.map()` to execute these functions concurrently. The `map_fu
 def map_function(func):
     return func()
 
+@get_time
 def main():
     with multiprocessing.Pool() as pool:
         # Use map to execute the functions
@@ -619,7 +671,7 @@ If you have any questions or need further clarification, feel free to leave a co
 ---
 
 
-## 006 Data Sharing Issue
+# 006 Data Sharing Issue
 
 
 
@@ -627,7 +679,7 @@ If you have any questions or need further clarification, feel free to leave a co
 
 ### Introduction
 
-When working with multiprocessing in Python, one of the major challenges we face is sharing data between different processes. In this blog post, we'll explore this issue in depth and discuss why sharing data isn't as straightforward as you might expect.
+When working with multiprocessing in Python, one of the major challenges we face is sharing data between different processes. In this section, we'll explore this issue in depth and discuss why sharing data isn't as straightforward as you might expect.
 
 ### The Problem with Data Sharing in Multiprocessing
 
@@ -698,13 +750,13 @@ By understanding these concepts and following best practices, you can overcome t
 ---
 
 
-## 007 Pipes (Part 1)
+# 007 Pipes (Part 1)
 
 
 
 ## Understanding Inter-Process Communication with Pipes in Python
 
-Inter-process communication (IPC) is essential when working with multiple processes in Python, as each process runs in its own memory space. One effective way to achieve IPC is by using pipes. This guide will walk you through the basics of using pipes for communication between processes.
+Inter-process communication (IPC) is essential when working with multiple processes in Python, as each process runs in its own memory space. One effective way to achieve IPC is by using pipes. This section will walk you through the basics of using pipes for communication between processes.
 
 ### What Are Pipes?
 
@@ -819,7 +871,7 @@ Pipes provide a straightforward way to communicate between processes in Python. 
 ---
 
 
-## 008 Pipes (Part 2)
+# 008 Pipes (Part 2)
 
 
 
@@ -827,7 +879,7 @@ Pipes provide a straightforward way to communicate between processes in Python. 
 
 ### Introduction
 
-Inter-process communication (IPC) is a crucial aspect of developing concurrent and distributed systems. In Python, the `multiprocessing` module provides several tools to facilitate IPC, with one of the most useful being the `Pipe`. In this blog post, we'll explore how to use pipes to send data between two processes. We'll create a real-world example where a sender process sends data to a receiver process, demonstrating the power and simplicity of using pipes for IPC.
+Inter-process communication (IPC) is a crucial aspect of developing concurrent and distributed systems. In Python, the `multiprocessing` module provides several tools to facilitate IPC, with one of the most useful being the `Pipe`. In this section, we'll explore how to use pipes to send data between two processes. We'll create a real-world example where a sender process sends data to a receiver process, demonstrating the power and simplicity of using pipes for IPC.
 
 ### Setup and Imports
 
@@ -941,13 +993,13 @@ In this guide, we've explored how to use pipes for IPC in Python. By creating a 
 ---
 
 
-## 009 Queues (Part 1)
+# 009 Queues (Part 1)
 
 
 
 ## Sharing Data Between Processes Using Queues in Python
 
-In our previous discussion, we explored how to share data between processes using pipes. Now, let’s dive into another powerful method for inter-process communication (IPC) in Python: using **queues**. Queues provide a convenient way to send data between processes in a **First-In-First-Out (FIFO)** manner, making them ideal for scenarios where you need to process tasks in a specific order.
+In our previous topic, we explored how to share data between processes using pipes. Now, let’s dive into another powerful method for inter-process communication (IPC) in Python: using **queues**. Queues provide a convenient way to send data between processes in a **First-In-First-Out (FIFO)** manner, making them ideal for scenarios where you need to process tasks in a specific order.
 
 ---
 
@@ -1104,7 +1156,7 @@ Happy coding!
 ---
 
 
-## 010 Queues (Part 2)
+# 010 Queues (Part 2)
 
 
 
@@ -1193,7 +1245,7 @@ Queues provide a straightforward IPC solution in Python's multiprocessing. By se
 
 ### Introduction
 
-When working with multiprocessing in Python, one common challenge is handling the order of data returned from multiple processes. Since processes run independently and their execution order is not guaranteed, the data they return can be unsorted. In this blog post, we will explore how to address this issue by using identifiers and sorting the data after it has been collected.
+When working with multiprocessing in Python, one common challenge is handling the order of data returned from multiple processes. Since processes run independently and their execution order is not guaranteed, the data they return can be unsorted. In this section, we will explore how to address this issue by using identifiers and sorting the data after it has been collected.
 
 ### The Problem: Unsorted Data from Multiple Processes
 
@@ -1321,7 +1373,7 @@ As you can see, the results are initially returned in the order they were proces
 4. **Error Handling**: Always include error handling in your production code to handle unexpected issues with processes or data retrieval.
 5. **Type Hints**: Use type hints to make your code more readable and maintainable, especially when working with queues and multiple processes.
 
-By following these tips and using the approach outlined in this blog post, you can effectively manage and sort data from multiple processes in Python.
+By following these tips and using the approach outlined in this section, you can effectively manage and sort data from multiple processes in Python.
 
 ---
 
@@ -1334,7 +1386,7 @@ By following these tips and using the approach outlined in this blog post, you c
 
 ### Introduction
 
-When working with concurrent programming in Python, whether it's multi-threading, asynchronous programming, or multi-processing, synchronization is crucial to prevent data races and ensure that shared resources are accessed safely. In this blog post, we'll explore how to use locks and semaphores with multi-processing in Python. These synchronization primitives help control the execution of code so that only a specified number of processes can execute a particular section of code at a time.
+When working with concurrent programming in Python, whether it's multi-threading, asynchronous programming, or multi-processing, synchronization is crucial to prevent data races and ensure that shared resources are accessed safely. In this section, we'll explore how to use locks and semaphores with multi-processing in Python. These synchronization primitives help control the execution of code so that only a specified number of processes can execute a particular section of code at a time.
 
 ### Using Process Locks
 
@@ -1459,7 +1511,16 @@ In this example:
 - The lock ensures that only one process can execute the critical section at a time.
 
 When you run this code, you'll see that up to three processes can wait to enter the critical section, but only one process can execute the critical section at a time.
+#### Key Differences Summarized:
 
+| Feature | multiprocessing.Lock | multiprocessing.Semaphore |
+|---|---|---|
+| Internal State | Binary (locked/unlocked) | Counter (integer value) |
+| Control Access | Allows 1 process at a time | Allows up to N processes at a time (N is the initial value) |
+| Purpose | Mutual Exclusion (critical sections) | Resource Limiting, Bounded Concurrency |
+| Ownership | Typically has ownership (process that acquired should release) | No inherent ownership (any process can release) |
+| Analogy | Single key to a private room | Parking lot with multiple spots |
+| Use Case | Protecting shared data from simultaneous modification | Limiting concurrent access to a pool of resources |
 ### Tips and Tricks
 
 - **Use Context Managers:** Always use the `with` syntax when working with locks and semaphores. This ensures that the lock or semaphore is released automatically, even if an exception occurs.
